@@ -1,0 +1,24 @@
+@import url("header.css");
+
+
+:root {
+    --cor-de-fundo: #A19FB8;
+    --cinza: #B8B2A3;
+    --lavanda: #A19FB8;
+    --azul: #799CB8;
+    --grafite:#38352C;
+    --azul-escuro: #171438;
+    --branco: #FFFFFF;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+body{
+    background-image: url("../image/backgrounds/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
