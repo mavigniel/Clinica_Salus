@@ -1,4 +1,4 @@
-.cabeçalho{
+.cabecalho{
     /* container principal da header */
     background-color: #ffffffa8;
     display: flex;
@@ -9,7 +9,7 @@
     margin-top: 2em;
     height: 3em;
 }
-.cabeçalho_logo{
+.cabecalho_logo{
     /* Este é um item do container cabeçalho */
     flex-grow: 1;
     display: flex;
@@ -18,20 +18,26 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.cabeçalho_logo_img{
+.cabecalho_logo_img{
     /* Imagem: Logo da Clínica */
     max-width:3em;
     height: auto;
     padding: 1em;
 }
-.cabeçalho_logo_titulo{
+.cabecalho_logo_nome{
     /* Texto: Clínica Salus */
     color: var(--azul-escuro);
     font-family: var(--fonte-secundaria);
     font-weight: 700;
-
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
 }
-.cabeçalho_menu{   
+
+.cabecalho_menu{   
     /* Este é um item do container cabeçalho */
     /* Esté um container dos itens do menu principal */
     flex-grow: 2;
@@ -42,7 +48,7 @@
     gap: 2em;
 } 
 
-.cabeçalho_menu_item{
+.cabecalho_menu_item{
     /* Contém cada opção de aba do menu */
     width: auto;
     font-size: 1,5em;
@@ -50,7 +56,12 @@
     font-family: var(--fonte-principal);
 }
 
-.cabeçalho_menu_item_titulo{
+.cabecalho_menu_item_botao{
     /* Texto das opççoes de aba do menu */
     color: var(--azul-escuro);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
 }

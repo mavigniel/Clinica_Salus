@@ -9,30 +9,134 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="cabeçalho">
-        <div class="cabeçalho_logo">
-            <img class="cabeçalho_logo_img" src="icon/logo_salus.png" alt="Logo da Clínica Salus">
-            <h1 class="cabeçalho_logo_titulo" class="cabeçalho_logo_nome">Clínica Salus</h1>
+    <!-- HEADER -->
+    <header class="cabecalho">
+        <div class="cabecalho_logo">
+            <img class="cabecalho_logo_img" src="icon/logo_salus.png" alt="Logo da Clínica Salus">
+            <button class="cabecalho_logo_nome">Clínica Salus</button>
         </div>
-        <div class="cabeçalho_menu">
-                <div class="cabeçalho_menu_item">
-                     <h1 class="cabeçalho_menu_item_titulo">Home</h1>
-                </div>
-                <div class="cabeçalho_menu_item">
-                    <h1 class="cabeçalho_menu_item_titulo">Especialidades</h1>
-                </div>
-                <div class="cabeçalho_menu_item">
-                    <h1 class="cabeçalho_menu_item_titulo">Equipe</h1>
-                </div>
-                <div class="cabeçalho_menu_item">
-                    <h1 class="cabeçalho_menu_item_titulo">Convênios</h1>
-                </div>
+        <div class="cabecalho_menu">
+            <div class="cabecalho_menu_item">
+                    <button class="cabecalho_menu_item_botao">Home</button>
+            </div>
+            <div class="cabecalho_menu_item">
+                <button class="cabecalho_menu_item_botao">Especialidades</button>
+            </div>
+            <div class="cabecalho_menu_item">
+                <button class="cabecalho_menu_item_botao">Equipe</button>
+            </div>
+            <div class="cabecalho_menu_item">
+                <button class="cabecalho_menu_item_botao">Convênios</button>
+            </div>
+            <div class="cabecalho_menu_item">
+                <button class="cabecalho_menu_item_botao">Estrutura</button>
+            </div>
+            <div class="cabecalho_menu_item">
+                <button class="cabecalho_menu_item_botao">Contato</button>
+            </div>
         </div>
         
     </header>
-    <script src="js/script.js"></script>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <section class="secao_principal">
+        <div class="secao_principal_texto">
+            <h1 class="secao_principal_texto_titulo">Aqui, cuidar é amar.</h1>
+            <p class="secao_principal_texto_descricao">O lugar onde a saúde encontra conforto e agilidade em todos os momentos.</p>
+            <button class="secao_principal_texto_botao">Consultas</button>
+        </div>
+        <div class="secao_principal_img">
+            <img src="image/outras/tres_medicos_fundo_branco.png" alt="Médica sorrindo na entrada da clínica" class="secao_principal_img_medica">
+        </div>
+    </section>
+
+    
+    <!-- SEÇÃO ESPECIALIDADES -->
+    <section class="secao_especialidades">
+        <section class="secao_especialidades_titulo">
+            <!-- Título da seção -->
+            <div class="secao_especialidades_titulo_texto">
+                <h1 class="secao_especialidades_texto">Especialidades</h1>
+            </div>
+        </section>
+        
+        <!-- SWIPER -->
+        <div class="secao_especialidades_swiper">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="image/especialidades/clinica_medica.png" alt="Imagem sobre Clínica Médica"></div>
+                    <div class="swiper-slide"><img src="image/especialidades/neurologia.png" alt="Imagem sobre Neurologia"></div>
+                    <div class="swiper-slide"><img src="image/especialidades/neuropediatria.png" alt="Imagem sobre Neuropediatria"></div>
+                    <div class="swiper-slide"><img src="image/especialidades/geriatria.png" alt="Imagem sobre geriatria"></div>
+                    <div class="swiper-slide"><img src="image/especialidades/psiquiatria.png" alt="Imagem sobre Psiquiatria"></div>
+                    <div class="swiper-slide"><img src="image/especialidades/reumatologia.png" alt="Imagem sobre Reumatologia"></div>
+                    <div class="swiper-slide"><img src="image/especialidades/medicina_da_dor.png" alt="Imagem sobre Medicina da Dor"></div>  
+                    <div class="swiper-slide"><img src="image/especialidades/neurofisiologia_clinica.png" alt="Imagem sobre Neurofisiologia Clínica"></div>                         
+                </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO EQUIPE -->
+    <section class="secao_equipe">
+        <div class="secao_equipe_titulo">
+            <!-- Título da seção -->
+            <h1 class="secao_equipe_titulo_texto">Equipe</h1>
+        </div>
+        <div>
+            <h2 class="secao_equipe_texto">Nome de Médico 1</h2>
+        </div>
+        <div>
+            <h2 class="secao_equipe_texto">Nome de Médico 2</h2>
+        </div>
+        <div>
+            <h2 class="secao_equipe_texto">Nome de Médico 2</h2>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        centeredSlides: false,
+        
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+     <script src="js/script.js"></script>
 </body>
 </html>

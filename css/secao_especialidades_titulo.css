@@ -1,0 +1,18 @@
+.secao_especialidades_titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    wisth: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px 0 60px 0;
+}
+
+.secao_especialidades_titulo_texto{
+    font-family: var(--fonte-principal);
+    font-size:  2em;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    text-align: center;
+}

@@ -1,5 +1,9 @@
+@import url("reset.css");
 @import url("header.css");
-
+@import url("secao_principal.css");
+@import url("secao_especialidades.css");
+@import url("secao_equipe.css");
+@import url("secao_especialidades_titulo.css");
 
 :root {
     --cor-de-fundo: #A19FB8;
