@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 4em 0 0 0;
+    padding: 1em 0 0 0;
 }
 
 .secao_equipe_titulo_img{
@@ -33,10 +33,10 @@
 .secao_equipe_titulo_paragrafro{
     font-family: var(--fonte-principal);
     font-size:  1.2em;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--azul-escuro);
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .secao_equipe_grid{
@@ -44,7 +44,8 @@
     grid-template-columns: auto auto auto;
     grid-template-rows: repeat(2, 1fr);
     gap: 2em;
-    width: 100%;
+    width: 95%;
+    max-height: 1500px;
     margin-top: 2em;
 }
 
