@@ -7,7 +7,7 @@
     align-items: center;
     position: relative;
     margin-top: 2em;
-    height: 3em;
+    height: 4em;
 }
 .cabecalho_logo{
     /* Este é um item do container cabeçalho */
@@ -35,6 +35,10 @@
     cursor: pointer;
     transition: color 0.3s ease;
     text-decoration: none;
+}
+.cabecalho_logo_nome:hover{
+    color:var(--lavanda);
+    transform:scale(1.1);
 }
 
 .cabecalho_menu{   
@@ -64,4 +68,10 @@
     cursor: pointer;
     transition: color 0.3s ease;
     text-decoration: none;
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho_menu_item_botao:hover{
+    color:var(--lavanda);
+    transform:scale(1.1);
 }

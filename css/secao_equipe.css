@@ -1,13 +1,24 @@
 .secao_equipe{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .secao_equipe_titulo{
-    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0 0 0;
+}
+
+.secao_equipe_titulo_img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 1em auto;
 }
 
 .secao_equipe_titulo_texto{
@@ -16,4 +27,97 @@
     font-weight: 700;
     color: var(--azul-escuro);
     text-align: center;
+    
+}
+
+.secao_equipe_titulo_paragrafro{
+    font-family: var(--fonte-principal);
+    font-size:  1.2em;
+    font-weight: 400;
+    color: var(--azul-escuro);
+    text-align: center;
+    margin-top: 2em;
+}
+
+.secao_equipe_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.secao_equipe_grid_medico{
+    background:#fff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+    text-align:center;
+    padding-bottom:35px;
+    border:1px solid rgba(121,156,184,.12);
+}
+
+.secao_equipe_grid_medico:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(0, 0, 0, 0.26);
+}
+
+.secao_equipe_grid_medico_foto{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    display:block;
+}
+
+.secao_equipe_grid_medico_nome{
+    margin-top:30px;
+    color:var(--azul-escuro);
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.secao_equipe_grid_medico_crm{
+    display:inline-block;
+    background:#F6F7FB;
+    color:var(--azul-escuro);
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.secao_equipe_grid_medico_descricao{
+    color:var(--azul-claro);
+    font-weight:600;
+    margin:15px 30px;
+    line-height:1.5;
+}
+
+.secao_equipe_grid_medico_texto{
+    color:#555;
+    line-height:1.8;
+    font-size:.95rem;
+    padding:0 30px;
+    margin-bottom:30px;
+}
+
+.secao_equipe_grid_medico_botao{
+    background:var(--azul-claro);
+    color:var(--lavanda);
+    border:2px solid var(--azul-escuro);
+    padding:15px 35px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.35s;
+}
+
+.secao_equipe_grid_medico_botao:hover{
+    background:var(--azul-escuro);
+    transform:scale(1.05);
+
 }

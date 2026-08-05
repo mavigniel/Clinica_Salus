@@ -4,6 +4,7 @@
 @import url("secao_especialidades.css");
 @import url("secao_equipe.css");
 @import url("secao_especialidades_titulo.css");
+@import url("secao_convenios.css");
 
 :root {
     --cor-de-fundo: #A19FB8;

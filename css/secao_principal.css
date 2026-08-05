@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .secao_principal_texto{
@@ -37,8 +37,13 @@
     border-radius: 8px;
 }
 
+.secao_principal_texto_botao:hover{
+    background-color: var(--azul-escuro);
+    color: #fff;
+}
+
 .secao_principal_img{
-    max-width: 60%;
+    max-width: 62%;
 }
 
 .secao_principal_img_medica{

@@ -1,12 +1,27 @@
 .secao_especialidades {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     min-height: 100vh;
     padding: 40px 20px;
+}
+.secao_especialidades_titulo_texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0 0 0;
+}
+
+.secao_especialidades_titulo_img{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 1em auto;
+
 }
 
 .swiper{
