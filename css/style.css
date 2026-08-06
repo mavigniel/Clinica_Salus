@@ -1,12 +1,10 @@
 @import url("reset.css");
 @import url("header.css");
-@import url("secao_principal.css");
-@import url("secao_especialidades.css");
-@import url("secao_equipe.css");
-@import url("secao_especialidades_titulo.css");
-@import url("secao_convenios.css");
-@import url("cta_footer.css");
+@import url("home.css");
+@import url("corpo_clinico.css");
+@import url("footer.css");
 @import url("contato.css");
+@import url("perguntas_frequentes.css");
 
 :root {
     --cor-de-fundo: #A19FB8;
@@ -21,10 +19,6 @@
 }
 
 body{
-    background-image: url("../image/backgrounds/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
