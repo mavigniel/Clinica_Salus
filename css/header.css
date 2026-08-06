@@ -55,8 +55,6 @@
 .cabecalho_menu_item{
     /* Contém cada opção de aba do menu */
     width: auto;
-    font-size: 1,5em;
-    text-decoration: none;
     font-family: var(--fonte-principal);
 }
 
@@ -69,9 +67,18 @@
     transition: color 0.3s ease;
     text-decoration: none;
     font-family: var(--fonte-secundaria);
+    font-size: 1.1em;
 }
 
-.cabecalho_menu_item_botao:hover{
+.cabecalho_menu_item_botao a{
+    text-decoration: none;
+}
+
+.cabecalho_menu_item_botao a:visited{
+    color: var(--azul-escuro);
+}
+
+.cabecalho_menu_item_botao a:hover{
+    transform: scale(1.1);
     color:var(--lavanda);
-    transform:scale(1.1);
 }

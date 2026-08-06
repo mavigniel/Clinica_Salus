@@ -5,6 +5,8 @@
 @import url("secao_equipe.css");
 @import url("secao_especialidades_titulo.css");
 @import url("secao_convenios.css");
+@import url("cta_footer.css");
+@import url("contato.css");
 
 :root {
     --cor-de-fundo: #A19FB8;
@@ -27,3 +29,4 @@ body{
     font-size: 16px;
     font-weight: 400;
 }
+
