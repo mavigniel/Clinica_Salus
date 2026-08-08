@@ -1,3 +1,10 @@
+.corpo_clinico{
+    background-image: url("../image/backgrounds/background3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .secao_equipe{
     display: flex;
     flex-direction: column;
@@ -11,33 +18,31 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-self: flex-start;
-    padding: 1em 0 0 2em;
+    align-self: center;
+    padding-top: 5em;
 }
 
 .secao_equipe_titulo_img{
     width: 100px;
     height: 100px;
     object-fit: contain;
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
 .secao_equipe_titulo_texto{
+    font-size:3rem;
+    color:var(--azul-escuro);
     font-family: var(--fonte-principal);
-    font-size:  2em;
-    font-weight: 700;
-    color: var(--azul-escuro);
     text-align: center;
     
 }
 
 .secao_equipe_titulo_paragrafro{
     font-family: var(--fonte-principal);
-    font-size:  1.2em;
-    font-weight: 700;
-    color: var(--azul-escuro);
-    text-align: left;
-    align-self: flex-start;
+    color:#666;
+    font-size:1.1rem;
+    text-align: center;
+    align-self: center;
     padding: 0 0 1em 2em;
 }
 
@@ -140,19 +145,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-self: flex-start;
+    align-self: center;
     padding: 1em 0 0 2em;    
 }
 
 .secao_especialidades_texto{
     padding: 0 0 0 1em;
+    font-size:3rem;
+    color:var(--azul-escuro);
+    font-family: var(--fonte-principal);
+    text-align: center;
 }
 
 .secao_especialidades_titulo_img{
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;
-    margin: 1em auto;
+    margin: 0 auto;
 
 }
 
@@ -195,48 +204,19 @@
     height: auto;
 }
 
+.secao_especialidades_titulo p{
+    color:#666;
+    font-size:1.1rem;
+    text-align: center;
+    align-self: center;
+}
+
 .secao_especialidades_titulo_texto{
     font-family: var(--fonte-principal);
     font-size:  2em;
-    font-weight: 700;
     color: var(--azul-escuro);
     text-align: center;
     height: 50px;
-    padding: 2em 0 1em 0;
-}
-.secao_especialidades_final{
-    place-items: center
+    padding: 4em 0 1em 0;
 }
 
-.secao_especialidades_final_grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    gap: 2em;
-    width: 70%;
-    margin-top: 2em;
-    
-}
-
-.secao_especialidades_final_div{
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    font-size: 1em;
-    text-align: center;
-    overflow:hidden;
-
-}
-
-.secao_especialidades_final_img{
-    width:100%;
-    height:auto;
-    object-fit:cover;
-    display:block;
-}
-
-.secao_especialidades_final_img:hover{
-    transform: scale(1.2,1.2);
-}

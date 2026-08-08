@@ -1,4 +1,4 @@
-main{
+.pagina-home{
     background-image: url("../image/backgrounds/background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,6 +60,44 @@ main{
     border-radius: 12px;
 }
 
+.secao_especialidades_final{
+    place-items: center
+}
+
+.secao_especialidades_final_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 2em;
+    width: 70%;
+    margin-top: 2em;
+    
+}
+
+.secao_especialidades_final_div{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    overflow:hidden;
+
+}
+
+.secao_especialidades_final_img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    display:block;
+}
+
+.secao_especialidades_final_img:hover{
+    transform: scale(1.2,1.2);
+}
+
+
 .secao_convenios{
     display:flex;
     flex-direction:column;
@@ -74,21 +112,21 @@ main{
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    padding:1em 0 0 0;
+    padding: 4em 0 0 0;
 }
 
 .secao_convenios_titulo_img{
     width:100px;
     height:100px;
     object-fit:contain;
-    margin:1em auto;
+    margin:0 auto;
 }
 
 .secao_convenios_titulo_texto{
     font-family:var(--fonte-principal);
-    font-size:2em;
-    font-weight:700;
+    font-size:3rem;
     color:var(--azul-escuro);
+    margin-bottom:15px;
     text-align:center;
 }
 
@@ -117,7 +155,6 @@ main{
 .secao_convenios_informacoes_titulo{
     font-family:var(--fonte-secundaria);
     font-size:1.5em;
-    font-weight:700;
     color:var(--azul-escuro);
     text-align:left;
     margin-bottom:1em;

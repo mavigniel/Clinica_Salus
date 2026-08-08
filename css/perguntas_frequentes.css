@@ -1,4 +1,4 @@
-main{
+.pagina-faq{
     background-image: url("../image/backgrounds/background2.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,4 +84,86 @@ main{
 
 .faq_item.ativo .faq_icone{
     transform:rotate(45deg);
+}
+
+/* ===================================
+   CTA FINAL FAQ
+=================================== */
+
+.faq_cta{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.faq_cta_container{
+    max-width:900px;
+    padding:4rem;
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.55);
+    border-radius:30px;
+    box-shadow:0 15px 45px rgba(23,20,56,.08);
+    text-align:center;
+}
+
+.faq_cta_subtitulo{
+    color:var(--azul-claro);
+    font-size:.95rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.faq_cta_titulo{
+    margin-top:.8rem;
+    color:var(--azul-escuro);
+    font-size:2.7rem;
+   font-weight:700;
+}
+
+.faq_cta_texto{
+    margin:2rem auto;
+    max-width:650px;
+    color:var(--texto);
+    font-size:1.08rem;
+    line-height:1.9;
+}
+
+.faq_cta_botoes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:2rem;
+}
+
+.faq_cta_botao_principal{
+    padding:16px 34px;
+    background:var(--azul-escuro);
+    color:white;
+    border-radius:50px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.faq_cta_botao_principal:hover{
+    transform:translateY(-4px);
+    background:var(--cinza);
+}
+
+.faq_cta_botao_secundario{
+    padding:16px 34px;
+    border:2px solid var(--azul-claro);
+    color:var(--azul-claro);
+    border-radius:50px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.faq_cta_botao_secundario:hover{
+    background:var(--azul-claro);
+    color:var(--cinza);
 }

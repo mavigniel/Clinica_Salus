@@ -1,10 +1,7 @@
 @import url("reset.css");
 @import url("header.css");
-@import url("home.css");
-@import url("corpo_clinico.css");
 @import url("footer.css");
-@import url("contato.css");
-@import url("perguntas_frequentes.css");
+
 
 :root {
     --cor-de-fundo: #A19FB8;
