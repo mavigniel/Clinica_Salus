@@ -1,0 +1,933 @@
+.quem_somos{
+    background-image: url("../image/backgrounds/background5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =========================================
+   VARIÁVEIS ESPECÍFICAS
+========================================= */
+
+.pagina_quem_somos{
+
+    --salus-bege:#B8B2A3;
+    --salus-lavanda:#A19FB8;
+    --salus-azul:#799CB8;
+    --salus-grafite:#38352C;
+    --salus-azul-escuro:#171438;
+
+    color:var(--salus-grafite);
+
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.quem_somos_container{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:0 auto;
+
+}
+
+
+/* =========================================
+   TÍTULOS DAS SEÇÕES
+========================================= */
+
+.titulo_secao{
+
+    max-width:760px;
+
+    margin:0 auto 3.5rem;
+
+    text-align:center;
+
+}
+
+.titulo_secao_detalhe{
+
+    display:block;
+
+    margin-bottom:.8rem;
+
+    color:var(--salus-azul);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    letter-spacing:.16rem;
+
+    text-transform:uppercase;
+
+}
+
+.titulo_secao h2{
+
+    margin:0 0 1rem;
+
+    color:var(--salus-azul-escuro);
+
+    font-size:clamp(2rem,4vw,3.2rem);
+
+    line-height:1.15;
+
+}
+
+.titulo_secao p{
+
+    margin:0;
+
+    line-height:1.8;
+
+    color:#5d5a55;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.quem_somos_hero{
+
+    min-height:480px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:5rem 8%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.96) 0%,
+            rgba(255,255,255,.90) 45%,
+            rgba(255,255,255,.45) 100%
+        ),
+
+        url("../image/backgrounds/background_quem_somos.png");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.quem_somos_hero_conteudo{
+
+    max-width:720px;
+
+}
+
+.quem_somos_tag{
+
+    display:inline-block;
+
+    margin-bottom:1.3rem;
+
+    color:var(--salus-azul);
+
+    font-weight:600;
+
+    letter-spacing:.12rem;
+
+    text-transform:uppercase;
+
+}
+
+.quem_somos_hero h1{
+
+    margin:0 0 1.5rem;
+
+    color:var(--salus-azul-escuro);
+
+    font-size:clamp(2.8rem,6vw,5rem);
+
+    line-height:1.06;
+
+}
+
+.quem_somos_hero p{
+
+    max-width:620px;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================================
+   APRESENTAÇÃO
+========================================= */
+
+.quem_somos_apresentacao{
+
+    padding:7rem 0;
+
+}
+
+.quem_somos_texto{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    color:#4d4a45;
+
+    text-align:center;
+
+    font-size:1.13rem;
+
+    line-height:2;
+
+}
+
+
+/* =========================================
+   MISSÃO / VISÃO / VALORES
+========================================= */
+
+.identidade{
+
+    padding:7rem 0;
+
+    background:rgba(255,255,255,.55);
+
+}
+
+.identidade_abas{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    margin-bottom:3rem;
+
+    flex-wrap:wrap;
+
+}
+
+.identidade_aba{
+
+    min-width:150px;
+
+    padding:1rem 2rem;
+
+    border:1px solid rgba(23,20,56,.15);
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.75);
+
+    color:var(--salus-azul-escuro);
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.identidade_aba:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(23,20,56,.08);
+
+}
+
+.identidade_aba.ativo{
+
+    background:var(--salus-azul-escuro);
+
+    color:#fff;
+
+    border-color:var(--salus-azul-escuro);
+
+}
+
+.identidade_conteudos{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.identidade_conteudo{
+
+    display:none;
+
+    padding:3rem;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.88);
+
+    box-shadow:0 20px 60px rgba(23,20,56,.08);
+
+    animation:aparecerConteudo .4s ease;
+
+}
+
+.identidade_conteudo.ativo{
+
+    display:block;
+
+}
+
+@keyframes aparecerConteudo{
+
+    from{
+        opacity:0;
+        transform:translateY(12px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.identidade_conteudo h3{
+
+    margin-top:0;
+
+    color:var(--salus-azul-escuro);
+
+    font-size:2rem;
+
+}
+
+.identidade_conteudo > p{
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+
+
+/* VALORES */
+
+.valores_grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:1.2rem;
+
+}
+
+.valor_card{
+
+    padding:1.7rem;
+
+    border-radius:18px;
+
+    background:#f8f8f7;
+
+    border:1px solid rgba(121,156,184,.15);
+
+}
+
+.valor_card h4{
+
+    margin:0 0 .8rem;
+
+    color:var(--salus-azul-escuro);
+
+}
+
+.valor_card p{
+
+    margin:0;
+
+    font-size:.94rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =========================================
+   HISTÓRIA
+========================================= */
+
+.historia{
+
+    padding:8rem 0;
+
+}
+
+.historia_timeline{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    margin:4rem 0;
+
+}
+
+.historia_timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10%;
+    right:10%;
+
+    top:50%;
+
+    height:2px;
+
+    background:rgba(121,156,184,.35);
+
+    z-index:0;
+
+}
+
+.historia_marco{
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:.7rem;
+
+    border:none;
+
+    background:none;
+
+    color:#68645e;
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+}
+
+.historia_ano{
+
+    font-weight:700;
+
+    color:var(--salus-azul-escuro);
+
+}
+
+.historia_ponto{
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:4px solid var(--salus-azul);
+
+    transition:.3s;
+
+}
+
+.historia_nome{
+
+    font-size:.85rem;
+
+}
+
+.historia_marco:hover .historia_ponto,
+.historia_marco.ativo .historia_ponto{
+
+    background:var(--salus-azul-escuro);
+
+    border-color:var(--salus-azul-escuro);
+
+    transform:scale(1.25);
+
+}
+
+.historia_marco.ativo .historia_nome{
+
+    color:var(--salus-azul-escuro);
+
+    font-weight:600;
+
+}
+
+
+/* PAINEL HISTÓRIA */
+
+.historia_conteudo{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.historia_painel{
+
+    display:none;
+
+    padding:3rem;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.82);
+
+    box-shadow:0 18px 50px rgba(23,20,56,.08);
+
+    animation:aparecerConteudo .4s ease;
+
+}
+
+.historia_painel.ativo{
+
+    display:block;
+
+}
+
+.historia_painel > span{
+
+    color:var(--salus-azul);
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    letter-spacing:.15rem;
+
+}
+
+.historia_painel h3{
+
+    margin:.8rem 0 1.2rem;
+
+    color:var(--salus-azul-escuro);
+
+    font-size:1.8rem;
+
+}
+
+.historia_painel p{
+
+    margin:0;
+
+    line-height:1.9;
+
+}
+
+
+/* =========================================
+   DEPOIMENTOS
+========================================= */
+
+.depoimentos{
+
+    padding:8rem 0;
+
+    background:rgba(184,178,163,.10);
+
+}
+
+.depoimentos_carrossel{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+.depoimentos_trilho{
+
+    display:flex;
+
+    gap:1.5rem;
+
+    transition:transform .55s ease;
+
+}
+
+.depoimento_card{
+
+    flex:0 0 calc((100% - 3rem) / 3);
+
+    box-sizing:border-box;
+
+    min-height:310px;
+
+    padding:2.2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    border-radius:24px;
+
+    background:#fff;
+
+    border:1px solid rgba(121,156,184,.12);
+
+    box-shadow:0 12px 35px rgba(23,20,56,.07);
+
+}
+
+.depoimento_estrelas{
+
+    margin-bottom:1.3rem;
+
+    color:#c79b48;
+
+    letter-spacing:.2rem;
+
+}
+
+.depoimento_card blockquote{
+
+    margin:0;
+
+    color:#4c4944;
+
+    font-size:1rem;
+
+    line-height:1.85;
+
+}
+
+.depoimento_autor{
+
+    margin-top:2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.35rem;
+
+}
+
+.depoimento_autor strong{
+
+    color:var(--salus-azul-escuro);
+
+}
+
+.depoimento_autor span{
+
+    color:#888;
+
+    font-size:.78rem;
+
+}
+
+
+/* CONTROLES */
+
+.depoimentos_controles{
+
+    margin-top:2.5rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:1.5rem;
+
+}
+
+.depoimento_anterior,
+.depoimento_proximo{
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--salus-azul-escuro);
+
+    color:white;
+
+    font-size:1.15rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.depoimento_anterior:hover,
+.depoimento_proximo:hover{
+
+    background:var(--salus-azul);
+
+    transform:translateY(-3px);
+
+}
+
+.depoimentos_indicadores{
+
+    display:flex;
+
+    gap:.5rem;
+
+}
+
+.depoimentos_indicadores button{
+
+    width:9px;
+    height:9px;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#c8c6c2;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.depoimentos_indicadores button.ativo{
+
+    width:24px;
+
+    border-radius:20px;
+
+    background:var(--salus-azul);
+
+}
+
+
+/* NOTA */
+
+.depoimentos_nota{
+
+    max-width:760px;
+
+    margin:2.5rem auto 0;
+
+    color:#77736d;
+
+    text-align:center;
+
+    font-size:.78rem;
+
+    line-height:1.6;
+
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.quem_somos_cta{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:7rem auto;
+
+    padding:5rem 2rem;
+
+    border-radius:35px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--salus-azul),
+            var(--salus-azul-escuro)
+        );
+
+    color:#fff;
+
+}
+
+.quem_somos_cta_conteudo{
+
+    max-width:720px;
+
+    margin:auto;
+
+}
+
+.quem_somos_cta span{
+
+    font-size:.88rem;
+
+    letter-spacing:.13rem;
+
+    text-transform:uppercase;
+
+}
+
+.quem_somos_cta h2{
+
+    margin:1rem 0;
+
+    font-size:clamp(2rem,4vw,3rem);
+
+}
+
+.quem_somos_cta p{
+
+    line-height:1.8;
+
+}
+
+.quem_somos_cta a{
+
+    display:inline-block;
+
+    margin-top:1.5rem;
+
+    padding:1rem 2.2rem;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:var(--salus-azul-escuro);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.quem_somos_cta a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width:900px){
+
+    .valores_grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .depoimento_card{
+
+        flex-basis:calc((100% - 1.5rem) / 2);
+
+    }
+
+}
+
+
+@media (max-width:700px){
+
+    .quem_somos_hero{
+
+        min-height:420px;
+
+        padding:4rem 1.5rem;
+
+    }
+
+    .identidade_conteudo,
+    .historia_painel{
+
+        padding:2rem;
+
+    }
+
+    .valores_grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .historia_timeline{
+
+        grid-template-columns:1fr;
+
+        gap:1rem;
+
+    }
+
+    .historia_timeline::before{
+
+        display:none;
+
+    }
+
+    .historia_marco{
+
+        flex-direction:row;
+
+        justify-content:flex-start;
+
+        padding:1rem;
+
+        border-radius:15px;
+
+        background:rgba(255,255,255,.6);
+
+    }
+
+    .depoimento_card{
+
+        flex-basis:100%;
+
+    }
+
+}

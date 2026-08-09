@@ -13,38 +13,491 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/quem_somos.css">
 </head>
-<body class="pagina-faq">
+<body class="quem_somos">
+    
     <!-- HEADER -->
     <header class="cabecalho">
         <div class="cabecalho_logo">
             <img class="cabecalho_logo_img" src="../icon/logo_salus.png" alt="Logo da Clínica Salus">
             <a class="cabecalho_logo_nome" href="../index.html">Clínica Salus</a>
         </div>
-        <div class="cabecalho_menu">
-            <div class="cabecalho_menu_item">
-                <button class="cabecalho_menu_item_botao"><a href="agendamento.html">Agendamento</a></button>
-            </div>           
-            <div class="cabecalho_menu_item">
-                <button class="cabecalho_menu_item_botao"><a href="corpo_clinico.html">Corpo Clínico</a></button>
-            </div>
-            <div class="cabecalho_menu_item">
-                <button class="cabecalho_menu_item_botao"><a href="quem_somos.html">Quem somos</a></button>
-            </div>
-            <div class="cabecalho_menu_item">
-                <button class="cabecalho_menu_item_botao"><a href="perguntas_frequentes.html">Perguntas Frequentes</a></button>
-            </div>
-            <div class="cabecalho_menu_item">
-                <button class="cabecalho_menu_item_botao"><a href="contato.html">Contato</a></button>
-            </div>
-        </div>
-        
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_item_botao" href="../pages/agendamento.html">Agendamento</a>
+            <a class="cabecalho_menu_item_botao" href="../pages/corpo_clinico.html">Corpo Clínico</a>
+            <a class="cabecalho_menu_item_botao" href="../pages/quem_somos.html">Quem somos</a>
+            <a class="cabecalho_menu_item_botao" href="../pages/perguntas_frequentes.html">Perguntas Frequentes </a>
+            <a class="cabecalho_menu_item_botao" href="../pages/contato.html">Contato</a>
+        </nav>
     </header>
 
-    <!-- MAIN -->
-    <main>
-        
-    </main>
-    
+        <!-- MAIN -->
+        <main class="pagina_quem_somos">
+
+            <!-- ========================================
+                HERO
+            ========================================= -->
+
+            <section class="quem_somos_hero">
+                <div class="quem_somos_hero_conteudo">
+                    <span class="quem_somos_tag">
+                        Clínica Salus
+                    </span>
+                    <h1>
+                        Cuidar de pessoas é a razão da nossa história.
+                    </h1>
+                    <p>
+                        Medicina, acolhimento e compromisso com a dignidade de cada pessoa.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ========================================
+                QUEM SOMOS
+            ========================================= -->
+
+            <section class="quem_somos_apresentacao">
+                <div class="quem_somos_container">
+                    <div class="titulo_secao">
+                        <span class="titulo_secao_detalhe">
+                            Nossa essência
+                        </span>
+                        <h2>Quem Somos</h2>
+                    </div>
+                    <p class="quem_somos_texto">
+                        A Clínica Salus é uma clínica multidisciplinar de Fortaleza
+                        dedicada a oferecer cuidado médico especializado com excelência,
+                        acolhimento e respeito à dignidade humana. Unimos conhecimento
+                        científico, atendimento individualizado e uma visão integral da
+                        pessoa, buscando proporcionar segurança, confiança e proximidade
+                        em todas as etapas do cuidado.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ========================================
+                MISSÃO, VISÃO E VALORES
+            ========================================= -->
+
+            <section class="identidade">
+                <div class="quem_somos_container">
+                    <div class="titulo_secao">
+                        <span class="titulo_secao_detalhe">
+                            O que nos orienta
+                        </span>
+                        <h2>Missão, Visão e Valores</h2>
+                    </div>
+                    <div class="identidade_abas"
+                        role="tablist"
+                        aria-label="Missão, visão e valores">
+                        <button
+                            class="identidade_aba ativo"
+                            data-conteudo="missao"
+                            role="tab"
+                            aria-selected="true">
+                            Missão
+                        </button>
+                        <button
+                            class="identidade_aba"
+                            data-conteudo="visao"
+                            role="tab"
+                            aria-selected="false">
+                            Visão
+                        </button>
+                        <button
+                            class="identidade_aba"
+                            data-conteudo="valores"
+                            role="tab"
+                            aria-selected="false">
+                            Valores
+                        </button>
+                    </div>
+                    <div class="identidade_conteudos">
+                        <!-- MISSÃO -->
+                        <article
+                            id="missao"
+                            class="identidade_conteudo ativo">
+                            <h3>Nossa Missão</h3>
+                            <p>
+                                Promover saúde e qualidade de vida por meio de uma medicina
+                                humana, ética e cientificamente responsável, reconhecendo
+                                em cada paciente uma pessoa dotada de dignidade própria.
+                                Inspirados pelos princípios cristãos de caridade,
+                                compaixão e serviço ao próximo, buscamos cuidar com
+                                competência, respeito e atenção integral.
+                            </p>
+                        </article>
+
+                        <!-- VISÃO -->
+
+                        <article
+                            id="visao"
+                            class="identidade_conteudo">
+                            <h3>Nossa Visão</h3>
+                            <p>
+                                Ser reconhecida em Fortaleza como referência em cuidado
+                                médico humanizado e multidisciplinar, conciliando
+                                excelência científica, inovação responsável e uma cultura
+                                de respeito à vida, à família e à dignidade humana.
+                                Queremos construir relações duradouras de confiança,
+                                acolhendo cada pessoa com respeito às suas convicções e à
+                                sua individualidade.
+                            </p>
+                        </article>
+
+                        <!-- VALORES -->
+                        <article
+                            id="valores"
+                            class="identidade_conteudo">
+                            <h3>Nossos Valores</h3>
+                            <div class="valores_grid">
+                                <div class="valor_card">
+                                    <h4>Dignidade humana</h4>
+                                    <p>
+                                        Cada pessoa possui valor próprio e merece ser
+                                        acolhida com respeito, atenção e cuidado.
+                                    </p>
+                                </div>
+                                <div class="valor_card">
+                                    <h4>Ética e verdade</h4>
+                                    <p>
+                                        Atuamos com honestidade, responsabilidade,
+                                        transparência e respeito aos princípios da boa
+                                        prática médica.
+                                    </p>
+                                </div>
+                                <div class="valor_card">
+                                    <h4>Caridade e compaixão</h4>
+                                    <p>
+                                        O cuidado também se manifesta pela escuta,
+                                        proximidade e disposição para servir.
+                                    </p>
+                                </div>
+                                <div class="valor_card">
+                                    <h4>Excelência</h4>
+                                    <p>
+                                        Buscamos constante aperfeiçoamento científico,
+                                        técnico e humano.
+                                    </p>
+                                </div>
+                                <div class="valor_card">
+                                    <h4>Respeito à vida</h4>
+                                    <p>
+                                        Defendemos o cuidado responsável da pessoa em
+                                        todas as fases da vida.
+                                    </p>
+                                </div>
+                                <div class="valor_card">
+                                    <h4>Justiça e responsabilidade</h4>
+                                    <p>
+                                        Tratamos cada paciente com equidade,
+                                        responsabilidade e respeito às suas necessidades.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+                HISTÓRIA
+            ========================================= -->
+
+            <section class="historia">
+                <div class="quem_somos_container">
+                    <div class="titulo_secao">
+                        <span class="titulo_secao_detalhe">
+                            Uma amizade que se tornou propósito
+                        </span>
+                        <h2>Nossa História</h2>
+                        <p>
+                            A história da Clínica Salus começa muito antes da abertura
+                            de suas portas.
+                        </p>
+                    </div>
+                    <div class="historia_timeline">
+                        <!-- 2018 -->
+                        <button
+                            class="historia_marco ativo"
+                            data-historia="historia-2018">
+
+                            <span class="historia_ano">2018</span>
+                            <span class="historia_ponto"></span>
+                            <span class="historia_nome">O início</span>
+                        </button>
+                        <!-- 2020 -->
+                        <button
+                            class="historia_marco"
+                            data-historia="historia-2020">
+
+                            <span class="historia_ano">2020</span>
+                            <span class="historia_ponto"></span>
+                            <span class="historia_nome">Novos desafios</span>
+                        </button>
+                        <!-- 2022 -->
+                        <button
+                            class="historia_marco"
+                            data-historia="historia-2022">
+
+                            <span class="historia_ano">2022</span>
+                            <span class="historia_ponto"></span>
+                            <span class="historia_nome">Expansão</span>
+                        </button>
+                        <!-- 2024 -->
+                        <button
+                            class="historia_marco"
+                            data-historia="historia-2024">
+
+                            <span class="historia_ano">2024</span>
+                            <span class="historia_ponto"></span>
+                            <span class="historia_nome">Integração</span>
+                        </button>
+                        <!-- 2026 -->
+                        <button
+                            class="historia_marco"
+                            data-historia="historia-2026">
+
+                            <span class="historia_ano">2026</span>
+                            <span class="historia_ponto"></span>
+                            <span class="historia_nome">8 anos de Salus</span>
+                        </button>
+                    </div>
+                    <div class="historia_conteudo">
+                        <article
+                            id="historia-2018"
+                            class="historia_painel ativo">
+                            <span>2018</span>
+                            <h3>Uma amizade que se tornou projeto</h3>
+                            <p>
+                                Amigos desde os tempos de escola no Colégio Farias Brito,
+                                em Fortaleza, os fundadores da Clínica Salus seguiram
+                                caminhos diferentes dentro da área da saúde, mas
+                                conservaram a amizade e uma visão comum sobre a medicina.
+                                Em 2018, reuniram experiências e especialidades para criar
+                                uma clínica na qual competência técnica e cuidado humano
+                                ocupassem o mesmo lugar.
+                            </p>
+                        </article>
+                        <article
+                            id="historia-2020"
+                            class="historia_painel">
+
+                            <span>2020</span>
+                            <h3>Cuidar também significa adaptar-se</h3>
+                            <p>
+                                Diante de um período de profundas mudanças para a saúde,
+                                a Salus reforçou protocolos de segurança, reorganizou
+                                fluxos de atendimento e ampliou seus canais de orientação
+                                aos pacientes. A experiência consolidou um princípio que
+                                permanece até hoje: a medicina precisa evoluir sem perder
+                                a proximidade humana.
+                            </p>
+                        </article>
+                        <article
+                            id="historia-2022"
+                            class="historia_painel">
+                            <span>2022</span>
+                            <h3>Uma clínica cada vez mais multidisciplinar</h3>
+                            <p>
+                                Com o crescimento da procura e a chegada de novos
+                                profissionais, a Clínica Salus ampliou sua atuação,
+                                fortalecendo a integração entre diferentes especialidades
+                                e permitindo um acompanhamento mais abrangente dos
+                                pacientes.
+                            </p>
+                        </article>
+                        <article
+                            id="historia-2024"
+                            class="historia_painel">
+                            <span>2024</span>
+                            <h3>Integração e novas parcerias</h3>
+                            <p>
+                                A clínica iniciou uma nova etapa de desenvolvimento,
+                                estabelecendo parcerias com serviços e clínicas
+                                complementares. O objetivo foi tornar a jornada do
+                                paciente mais simples, segura e integrada, preservando a
+                                qualidade que marcou a Salus desde sua fundação.
+                            </p>
+                        </article>
+                        <article
+                            id="historia-2026"
+                            class="historia_painel">
+                            <span>2026</span>
+                            <h3>Oito anos cuidando de pessoas</h3>
+                            <p>
+                                Ao completar oito anos, a Clínica Salus reúne oito
+                                especialidades médicas e uma rede de clínicas parceiras,
+                                mantendo a mesma essência que motivou seus fundadores:
+                                oferecer uma medicina competente, ética, próxima e
+                                verdadeiramente comprometida com cada pessoa que chega
+                                até nós.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+                DEPOIMENTOS
+            ========================================= -->
+
+            <section class="depoimentos">
+                <div class="quem_somos_container">
+                    <div class="titulo_secao">
+                        <span class="titulo_secao_detalhe">
+                           Experiências de quem confia na Salus
+                        </span>
+                        <h2>O que nossos pacientes dizem</h2>
+                        <p>
+                            Alguns relatos compartilhados por pacientes sobre a
+                            experiência de atendimento na Clínica Salus.
+                        </p>
+                    </div>
+                    <div class="depoimentos_carrossel">
+                        <div class="depoimentos_trilho">
+                            <!-- 1 -->
+                            <article class="depoimento_card">
+                                <div class="depoimento_estrelas">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    “Desde a recepção até a consulta fui atendida com
+                                    muita atenção. A médica explicou tudo com calma e me
+                                    deixou muito segura.”
+                                </blockquote>
+                                <div class="depoimento_autor">
+                                    <strong>Maria A.</strong>
+                                    <span>Avaliação publicada no Google</span>
+                                </div>
+                            </article>
+
+                            <!-- 2 -->
+                            <article class="depoimento_card">
+                                <div class="depoimento_estrelas">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    “Ambiente muito organizado e acolhedor. O atendimento
+                                    começou no horário e toda a equipe foi extremamente
+                                    educada.”
+                                </blockquote>
+                                <div class="depoimento_autor">
+                                    <strong>José R.</strong>
+                                    <span>Avaliação publicada no Google</span>
+                                </div>
+                            </article>
+
+                            <!-- 3 -->
+                            <article class="depoimento_card">
+                                <div class="depoimento_estrelas">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    “Fiquei impressionada com o cuidado durante toda a
+                                    consulta. Não senti pressa e consegui esclarecer todas
+                                    as minhas dúvidas.”
+                                </blockquote>
+                                <div class="depoimento_autor">
+                                    <strong>Carla M.</strong>
+                                    <span>Avaliação publicada no Google</span>
+                                </div>
+                            </article>
+
+                            <!-- 4 -->
+                            <article class="depoimento_card">
+                                <div class="depoimento_estrelas">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    “Excelente atendimento. A clínica é muito confortável
+                                    e o médico foi cuidadoso ao explicar cada etapa do
+                                    tratamento.”
+                                </blockquote>
+                                <div class="depoimento_autor">
+                                    <strong>Paulo F.</strong>
+                                    <span>Avaliação publicada no Google</span>
+                                </div>
+                            </article>
+
+                            <!-- 5 -->
+
+                            <article class="depoimento_card">
+                                <div class="depoimento_estrelas">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    “Minha mãe foi muito bem acolhida. A atenção da equipe
+                                    com pacientes idosos fez toda a diferença para nossa
+                                    família.”
+                                </blockquote>
+                                <div class="depoimento_autor">
+                                    <strong>Ana C.</strong>
+                                    <span>Avaliação publicada no Google</span>
+                                </div>
+                            </article>
+
+                            <!-- 6 -->
+                            <article class="depoimento_card">
+                                <div class="depoimento_estrelas">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    “Do agendamento ao atendimento médico, tudo foi muito
+                                    bem organizado. Uma experiência realmente diferente.”
+                                </blockquote>
+                                <div class="depoimento_autor">
+                                    <strong>Ricardo L.</strong>
+                                    <span>Avaliação publicada no Google</span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- CONTROLES -->
+                        <div class="depoimentos_controles">
+                            <button
+                                class="depoimento_anterior"
+                                aria-label="Depoimento anterior">
+                                &#8592;
+                            </button>
+                            <div class="depoimentos_indicadores"></div>
+
+                            <button
+                                class="depoimento_proximo"
+                                aria-label="Próximo depoimento">
+                                &#8594;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NOTA -->
+                    <p class="depoimentos_nota">
+                        Os depoimentos apresentados nesta página reproduzem avaliações
+                        públicas atribuídas ao Google. As identificações foram
+                        abreviadas para preservar a privacidade dos autores.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ========================================
+                CTA FINAL
+            ========================================= -->
+            <section class="quem_somos_cta">
+                <div class="quem_somos_cta_conteudo">
+                    <span>Cuidado que começa pela confiança.</span>
+                    <h2>
+                        Conheça de perto a experiência Salus.
+                    </h2>
+                    <p>
+                        Nossa equipe está preparada para receber você com atenção,
+                        respeito e excelência.
+                    </p>
+                    <a href="agendamento.html">
+                        Agendar consulta
+                    </a>
+                </div>
+            </section>
+        </main>
+   
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer_container">
@@ -132,7 +585,7 @@
         </div>
     </footer>
     
-    
+    <script src="../js/quem_somos.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

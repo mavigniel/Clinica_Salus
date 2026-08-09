@@ -40,23 +40,6 @@
     transform:scale(1.1);
 }
 
-.cabecalho_menu{   
-    /* Este é um item do container cabeçalho */
-    /* Esté um container dos itens do menu principal */
-    flex-grow: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 2em;
-} 
-
-.cabecalho_menu_item{
-    /* Contém cada opção de aba do menu */
-    width: auto;
-    font-family: var(--fonte-principal);
-}
-
 .cabecalho_menu_item_botao{
     /* Texto das opççoes de aba do menu */
     color: var(--azul-escuro);
@@ -69,15 +52,32 @@
     font-size: 1.1em;
 }
 
-.cabecalho_menu_item_botao a{
-    text-decoration: none;
+.cabecalho_menu{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
 }
 
-.cabecalho_menu_item_botao a:visited{
+.cabecalho_menu_item_botao{
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.1rem;
+    transition: .3s ease;
+    display: inline-block;
+}
+
+.cabecalho_menu_item_botao:visited{
     color: var(--azul-escuro);
 }
 
-.cabecalho_menu_item_botao a:hover{
-    transform: scale(1.1);
-    color:var(--lavanda);
+.cabecalho_menu_item_botao:hover{
+    color: var(--lavanda);
+    transform: translateY(-2px);
+}
+
+.cabecalho_menu_item_botao:active{
+    color: var(--lavanda);
 }
