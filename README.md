@@ -42,13 +42,18 @@ Este projeto faz parte da construção do meu portfólio como desenvolvedor Full
 ## 📂 Estrutura do projeto
 
 ```text
-clinica-medica/
+Clinica_Salus/
 
 ├── css/
 ├── js/
 ├── images/
 ├── icons/
 ├── index.html
+├── pages/
+├── LICENSE
+├── CHANGELOG.md
+├── PLANEJAMENTO.md
+├── ROADMAP.md
 └── README.md
 ```
 
@@ -68,6 +73,7 @@ clinica-medica/
 * Formulário de agendamento
 * Integração com WhatsApp
 * Botão "Voltar ao topo"
+* Perguntas Frequentes
 
 ---
 
@@ -112,9 +118,9 @@ Durante o desenvolvimento deste projeto estou aprofundando meus conhecimentos em
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido exclusivamente para fins de estudo e demonstração em portfólio.
+O código deste projeto está licenciado sob a licença MIT.
 
-Todos os direitos sobre o código-fonte são reservados ao autor. É proibida a reprodução, redistribuição ou utilização comercial, total ou parcial, sem autorização prévia e por escrito.
+As imagens, identidade visual, logotipo e demais elementos gráficos foram desenvolvidos exclusivamente para este projeto e não devem ser reutilizados sem autorização do autor.
 
 ---
 
