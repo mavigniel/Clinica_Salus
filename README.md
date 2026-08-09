@@ -7,6 +7,10 @@ Projeto desenvolvido por Mavigniel N M
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git\&logoColor=white)
 
+## 🌐 Site publicado
+
+[Visitar Clínica Salus](https://mavigniel.github.io/Clinica_Salus/)
+
 ## 📖 Sobre o projeto
 
 Este projeto consiste no desenvolvimento de um site institucional responsivo para uma clínica médica fictícia, criado com o objetivo de consolidar conhecimentos em desenvolvimento Front-End utilizando HTML5, CSS3 e JavaScript.
@@ -88,18 +92,6 @@ Clinica_Salus/
 * [ ] Backend em FastAPI
 * [ ] Banco de dados PostgreSQL
 * [ ] Área administrativa
-
----
-
-## 🌐 Deploy
-
-O projeto será publicado no GitHub Pages.
-
----
-
-## 📸 Preview
-
-Em breve...
 
 ---
 
