@@ -1,0 +1,613 @@
+/* =========================================
+   PÁGINA AGENDAMENTO
+========================================= */
+
+.pagina_agendamento {
+    --agenda-azul: #799CB8;
+    --agenda-azul-escuro: #171438;
+    --agenda-lavanda: #A19FB8;
+    --agenda-bege: #B8B2A3;
+    --agenda-grafite: #38352C;
+
+    background-image: url("../image/backgrounds/background2.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--agenda-grafite);
+}
+
+.agendamento_container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+.agendamento_titulo {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.agendamento_titulo > span,
+.agendamento_formulario_cabecalho > span {
+    display: block;
+    margin-bottom: .8rem;
+
+    color: var(--agenda-azul);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+.agendamento_titulo h2,
+.agendamento_formulario_cabecalho h2 {
+    margin: 0 0 1rem;
+
+    color: var(--agenda-azul-escuro);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.agendamento_titulo p,
+.agendamento_formulario_cabecalho p {
+    color: #68645f;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.agendamento_hero {
+    min-height: 500px;
+    padding: 5rem 8%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.97) 0%,
+            rgba(255,255,255,.92) 42%,
+            rgba(255,255,255,.50) 70%,
+            rgba(255,255,255,.10) 100%
+        ),
+        url("../image/agendamento/hero_agendamento.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.agendamento_hero_conteudo {
+    max-width: 680px;
+}
+
+.agendamento_tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    color: var(--agenda-azul);
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+.agendamento_hero h1 {
+    margin: 0 0 1.2rem;
+
+    color: var(--agenda-azul-escuro);
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.05;
+}
+
+.agendamento_hero p {
+    max-width: 620px;
+    margin-bottom: 2rem;
+
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
+.agendamento_hero_botao {
+    display: inline-block;
+    padding: 1rem 2rem;
+
+    border-radius: 50px;
+    background: var(--agenda-azul-escuro);
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.agendamento_hero_botao:hover {
+    background: var(--agenda-azul);
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   COMO FUNCIONA
+========================================= */
+
+.como_funciona {
+    padding: 8rem 0;
+}
+
+.como_funciona_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.como_funciona_card {
+    position: relative;
+    padding: 2.4rem;
+
+    background: rgba(255,255,255,.88);
+    border: 1px solid rgba(121,156,184,.14);
+    border-radius: 26px;
+
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(23,20,56,.06);
+
+    transition: .3s;
+}
+
+.como_funciona_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(23,20,56,.1);
+}
+
+.etapa_numero {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.5rem;
+
+    color: rgba(23,20,56,.18);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.etapa_icone {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(121,156,184,.17);
+
+    color: var(--agenda-azul-escuro);
+    font-size: 1.6rem;
+}
+
+.como_funciona_card h3 {
+    color: var(--agenda-azul-escuro);
+}
+
+.como_funciona_card p {
+    color: #69655f;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.agendamento_principal {
+    padding: 8rem 0;
+}
+
+.agendamento_formulario_area {
+    max-width: 1000px;
+    margin: auto;
+    padding: 4rem;
+
+    background: rgba(255,255,255,.93);
+    border-radius: 32px;
+    box-shadow: 0 25px 65px rgba(23,20,56,.09);
+}
+
+.agendamento_formulario_cabecalho {
+    max-width: 720px;
+    margin-bottom: 3.5rem;
+}
+
+.agendamento_formulario {
+    width: 100%;
+}
+
+.form_secao {
+    margin: 0 0 3rem;
+    padding: 0;
+
+    border: none;
+}
+
+.form_secao legend {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: .9rem;
+
+    border-bottom: 1px solid rgba(121,156,184,.18);
+
+    color: var(--agenda-azul-escuro);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.form_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem;
+}
+
+.form_grupo {
+    margin-bottom: 1.5rem;
+}
+
+.form_grupo label,
+.form_label {
+    display: block;
+    margin-bottom: .55rem;
+
+    color: var(--agenda-azul-escuro);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.form_grupo input,
+.form_grupo select,
+.form_grupo textarea {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    background: #fff;
+    outline: none;
+
+    color: #333;
+    font-family: inherit;
+    font-size: .95rem;
+
+    transition: .25s;
+}
+
+.form_grupo input:focus,
+.form_grupo select:focus,
+.form_grupo textarea:focus {
+    border-color: var(--agenda-azul);
+    box-shadow: 0 0 0 4px rgba(121,156,184,.12);
+}
+
+.form_grupo select:disabled {
+    background: #f1f1f1;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.form_grupo textarea {
+    resize: vertical;
+}
+
+.form_grupo_completo {
+    width: 100%;
+}
+
+.form_erro {
+    display: block;
+    min-height: 17px;
+    margin-top: .35rem;
+
+    color: #a53e3e;
+    font-size: .75rem;
+}
+
+
+/* =========================================
+   RADIO BUTTONS
+========================================= */
+
+.form_bloco_opcoes {
+    margin-bottom: 2rem;
+}
+
+.form_radios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+}
+
+.form_radios label {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+
+    color: #555;
+    cursor: pointer;
+}
+
+.form_radios input {
+    accent-color: var(--agenda-azul-escuro);
+}
+
+
+/* =========================================
+   CAMPO CONVÊNIO
+========================================= */
+
+.campo_convenio {
+    display: none;
+    max-width: 480px;
+}
+
+.campo_convenio.ativo {
+    display: block;
+}
+
+
+/* =========================================
+   PRIVACIDADE / AVISO
+========================================= */
+
+.form_privacidade {
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+
+    margin: 2rem 0;
+}
+
+.form_privacidade input {
+    margin-top: .25rem;
+    accent-color: var(--agenda-azul-escuro);
+}
+
+.form_privacidade label {
+    color: #6f6b65;
+    font-size: .82rem;
+    line-height: 1.6;
+}
+
+.agendamento_aviso {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    margin: 2rem 0;
+    padding: 1.3rem;
+
+    background: rgba(121,156,184,.10);
+    border-left: 4px solid var(--agenda-azul);
+    border-radius: 10px;
+}
+
+.agendamento_aviso i {
+    margin-top: .2rem;
+    color: var(--agenda-azul);
+}
+
+.agendamento_aviso p {
+    margin: 0;
+
+    color: #625e58;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.agendamento_botao {
+    padding: 1rem 1.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+
+    border: none;
+    border-radius: 50px;
+    background: var(--agenda-azul-escuro);
+
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.agendamento_botao:hover {
+    background: var(--agenda-azul);
+    transform: translateY(-3px);
+}
+
+.form_mensagem {
+    margin-top: 1.2rem;
+    font-size: .9rem;
+}
+
+.form_mensagem.sucesso {
+    color: #376e50;
+}
+
+.form_mensagem.erro {
+    color: #a53e3e;
+}
+
+
+/* =========================================
+   INFORMAÇÕES IMPORTANTES
+========================================= */
+
+.informacoes_agendamento {
+    padding: 8rem 0;
+}
+
+.informacoes_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.informacao_card {
+    padding: 2.3rem;
+
+    background: rgba(255,255,255,.86);
+    border: 1px solid rgba(121,156,184,.14);
+    border-radius: 24px;
+
+    text-align: center;
+}
+
+.informacao_card > i {
+    margin-bottom: 1.3rem;
+
+    color: var(--agenda-azul);
+    font-size: 2rem;
+}
+
+.informacao_card h3 {
+    color: var(--agenda-azul-escuro);
+}
+
+.informacao_card p {
+    color: #68645e;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.agendamento_whatsapp {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 1rem auto 8rem;
+    padding: 4rem;
+    box-sizing: border-box;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        var(--agenda-azul),
+        var(--agenda-azul-escuro)
+    );
+
+    color: #fff;
+}
+
+.agendamento_whatsapp_conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.agendamento_whatsapp_conteudo > div {
+    max-width: 650px;
+}
+
+.agendamento_whatsapp span {
+    font-size: .8rem;
+    letter-spacing: .13rem;
+    text-transform: uppercase;
+}
+
+.agendamento_whatsapp h2 {
+    margin: .8rem 0;
+    font-size: clamp(2rem,4vw,2.8rem);
+}
+
+.agendamento_whatsapp p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.agendamento_whatsapp a {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    padding: 1rem 1.7rem;
+
+    border-radius: 50px;
+    background: #fff;
+
+    color: var(--agenda-azul-escuro);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.agendamento_whatsapp a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.16);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+    .como_funciona_grid,
+    .informacoes_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .agendamento_whatsapp_conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 700px) {
+    .agendamento_hero {
+        min-height: 430px;
+        padding: 4rem 1.5rem;
+    }
+
+    .agendamento_formulario_area {
+        padding: 2.2rem 1.4rem;
+    }
+
+    .form_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form_radios {
+        flex-direction: column;
+    }
+
+    .agendamento_whatsapp {
+        padding: 3rem 1.5rem;
+    }
+}

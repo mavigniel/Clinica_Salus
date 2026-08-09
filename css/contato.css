@@ -43,7 +43,6 @@
 .contato_titulo_secao > span {
     display: block;
     margin-bottom: .8rem;
-
     color: var(--contato-azul);
     font-size: .82rem;
     font-weight: 600;
@@ -53,7 +52,6 @@
 
 .contato_titulo_secao h2 {
     margin: 0 0 1rem;
-
     color: var(--contato-azul-escuro);
     font-size: clamp(2rem, 4vw, 3rem);
 }
@@ -92,7 +90,7 @@
 }
 
 .contato_hero_conteudo {
-    max-width: 650px;
+    max-width: 750px;
 }
 
 .contato_tag {
@@ -107,15 +105,15 @@
 }
 
 .contato_hero h1 {
-    margin: 0 0 1.2rem;
-
+    margin: 0 0 1.9rem;
+    max-width: 650px;
     color: var(--contato-azul-escuro);
     font-size: clamp(3rem, 6vw, 5rem);
     line-height: 1;
 }
 
 .contato_hero p {
-    max-width: 600px;
+    max-width: 750px;
     margin-bottom: 2rem;
 
     font-size: 1.15rem;

@@ -31,20 +31,22 @@
     margin-bottom: 1em;
 }
 
-.secao_principal_texto_botao{
+.secao_principal_texto > a{
+    background-color: transparent;
+    border: 2px solid var(--azul-escuro);
+    padding: 0.8em 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
     font-family: var(--fonte-secundaria);
     font-weight: 500;
     background-color: transparent;
     color: var(--azul-escuro);
-    border: 2px solid var(--azul-escuro);
-    padding: 0.8em 1.5em;
     font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 8px;
+    text-decoration: none;
 }
 
-.secao_principal_texto_botao:hover{
+.secao_principal_texto > a:hover{
     background-color: var(--azul-escuro);
     color: #fff;
 }

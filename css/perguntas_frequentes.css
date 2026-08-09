@@ -16,6 +16,17 @@
     margin-bottom:60px;
 }
 
+.faq_titulo > span{
+    display: block;
+    text-align: center;
+    margin-bottom: .8rem;
+    color: var(--azul);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
 .faq_titulo h1{
     font-size:3rem;
     color:var(--azul-escuro);

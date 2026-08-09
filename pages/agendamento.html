@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/agendamento.css">
 </head>
-<body class="contato">
+<body class="pagina_agendamento">
 
     <!-- HEADER -->
     <header class="cabecalho">
@@ -31,8 +31,485 @@
     </header>
 
     <!-- MAIN -->
-    <main>
-        
+     <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="agendamento_hero">
+            <div class="agendamento_hero_conteudo">
+                <span class="agendamento_tag">Seu cuidado começa aqui</span>
+
+                <h1>Agende sua consulta</h1>
+
+                <p>
+                    Escolha seu atendimento e informe sua preferência.
+                    Nossa equipe entrará em contato para confirmar a disponibilidade.
+                </p>
+
+                <a href="#solicitar-agendamento" class="agendamento_hero_botao">
+                    Solicitar agendamento
+                </a>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             COMO FUNCIONA
+        ========================== -->
+        <section class="como_funciona">
+            <div class="agendamento_container">
+
+                <div class="agendamento_titulo">
+                    <span>Agendamento simples</span>
+                    <h2>Como funciona?</h2>
+
+                    <p>
+                        São apenas três etapas para solicitar seu atendimento.
+                    </p>
+                </div>
+
+                <div class="como_funciona_grid">
+
+                    <article class="como_funciona_card">
+                        <span class="etapa_numero">01</span>
+
+                        <div class="etapa_icone">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+
+                        <h3>Escolha seu atendimento</h3>
+
+                        <p>
+                            Informe a especialidade e, se desejar,
+                            o profissional de sua preferência.
+                        </p>
+                    </article>
+
+                    <article class="como_funciona_card">
+                        <span class="etapa_numero">02</span>
+
+                        <div class="etapa_icone">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+
+                        <h3>Informe sua preferência</h3>
+
+                        <p>
+                            Escolha uma data e o período mais conveniente
+                            para você.
+                        </p>
+                    </article>
+
+                    <article class="como_funciona_card">
+                        <span class="etapa_numero">03</span>
+
+                        <div class="etapa_icone">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <h3>Aguarde a confirmação</h3>
+
+                        <p>
+                            Nossa recepção verificará a disponibilidade
+                            e entrará em contato.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             FORMULÁRIO
+        ========================== -->
+        <section class="agendamento_principal" id="solicitar-agendamento">
+            <div class="agendamento_container">
+
+                <div class="agendamento_formulario_area">
+
+                    <div class="agendamento_formulario_cabecalho">
+                        <span>Solicitação de atendimento</span>
+
+                        <h2>Solicite seu agendamento</h2>
+
+                        <p>
+                            Preencha os dados abaixo. A consulta será confirmada
+                            somente após o contato da nossa equipe.
+                        </p>
+                    </div>
+
+                    <form id="formularioAgendamento" class="agendamento_formulario">
+
+                        <!-- DADOS DO PACIENTE -->
+                        <fieldset class="form_secao">
+                            <legend>Dados do paciente</legend>
+
+                            <div class="form_grid">
+
+                                <div class="form_grupo">
+                                    <label for="nome">Nome completo</label>
+
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        placeholder="Digite seu nome"
+                                        autocomplete="name"
+                                        required
+                                    >
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                                <div class="form_grupo">
+                                    <label for="nascimento">Data de nascimento</label>
+
+                                    <input
+                                        type="date"
+                                        id="nascimento"
+                                        name="nascimento"
+                                        required
+                                    >
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                                <div class="form_grupo">
+                                    <label for="telefone">Telefone</label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefone"
+                                        name="telefone"
+                                        placeholder="(85) 99999-9999"
+                                        autocomplete="tel"
+                                        required
+                                    >
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                                <div class="form_grupo">
+                                    <label for="email">E-mail</label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="seuemail@exemplo.com"
+                                        autocomplete="email"
+                                        required
+                                    >
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+
+                        <!-- ATENDIMENTO -->
+                        <fieldset class="form_secao">
+                            <legend>Atendimento</legend>
+
+                            <div class="form_grid">
+
+                                <div class="form_grupo">
+                                    <label for="especialidade">Especialidade</label>
+
+                                    <select id="especialidade" name="especialidade" required>
+                                        <option value="">Selecione uma especialidade</option>
+                                        <option value="neurologia">Neurologia</option>
+                                        <option value="neuropediatria">Neuropediatria</option>
+                                        <option value="psiquiatria">Psiquiatria</option>
+                                        <option value="reumatologia">Reumatologia</option>
+                                        <option value="clinica-medica">Clínica Médica</option>
+                                        <option value="geriatria">Geriatria</option>
+                                        <option value="neurofisiologia">Neurofisiologia Clínica</option>
+                                        <option value="medicina-dor">Medicina da Dor</option>
+                                    </select>
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                                <div class="form_grupo">
+                                    <label for="profissional">Profissional</label>
+
+                                    <select id="profissional" name="profissional" disabled required>
+                                        <option value="">
+                                            Selecione primeiro a especialidade
+                                        </option>
+                                    </select>
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                            </div>
+
+
+                            <!-- PARTICULAR / CONVÊNIO -->
+                            <div class="form_bloco_opcoes">
+
+                                <span class="form_label">
+                                    Forma de atendimento
+                                </span>
+
+                                <div class="form_radios">
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="formaAtendimento"
+                                            value="particular"
+                                            checked
+                                        >
+                                        Particular
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="formaAtendimento"
+                                            value="convenio"
+                                        >
+                                        Convênio
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+                            <!-- CONVÊNIO DINÂMICO -->
+                            <div class="form_grupo campo_convenio" id="campoConvenio">
+                                <label for="convenio">Convênio</label>
+
+                                <select id="convenio" name="convenio">
+                                    <option value="">Selecione seu convênio</option>
+                                    <option value="unimed">Unimed</option>
+                                    <option value="hapvida">Hapvida</option>
+                                    <option value="amil">Amil</option>
+                                    <option value="bradesco">Bradesco Saúde</option>
+                                    <option value="sulamerica">SulAmérica</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+
+                                <span class="form_erro"></span>
+                            </div>
+
+
+                            <!-- TIPO DE CONSULTA -->
+                            <div class="form_bloco_opcoes">
+
+                                <span class="form_label">
+                                    Tipo de consulta
+                                </span>
+
+                                <div class="form_radios">
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="tipoConsulta"
+                                            value="primeira"
+                                            checked
+                                        >
+                                        Primeira consulta
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="tipoConsulta"
+                                            value="retorno"
+                                        >
+                                        Retorno
+                                    </label>
+
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- PREFERÊNCIA -->
+                        <fieldset class="form_secao">
+                            <legend>Preferência de agendamento</legend>
+
+                            <div class="form_grid">
+
+                                <div class="form_grupo">
+                                    <label for="dataPreferida">Data desejada</label>
+
+                                    <input
+                                        type="date"
+                                        id="dataPreferida"
+                                        name="dataPreferida"
+                                        required
+                                    >
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                                <div class="form_grupo">
+                                    <label for="periodo">Período</label>
+
+                                    <select id="periodo" name="periodo" required>
+                                        <option value="">Selecione</option>
+                                        <option value="manha">Manhã</option>
+                                        <option value="tarde">Tarde</option>
+                                        <option value="qualquer">Qualquer período</option>
+                                    </select>
+
+                                    <span class="form_erro"></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form_grupo form_grupo_completo">
+                                <label for="observacoes">Observações</label>
+
+                                <textarea
+                                    id="observacoes"
+                                    name="observacoes"
+                                    rows="5"
+                                    placeholder="Existe alguma informação que nossa equipe deva saber?"
+                                ></textarea>
+                            </div>
+
+                        </fieldset>
+
+
+                        <!-- PRIVACIDADE -->
+                        <div class="form_privacidade">
+                            <input
+                                type="checkbox"
+                                id="privacidade"
+                                name="privacidade"
+                                required
+                            >
+
+                            <label for="privacidade">
+                                Concordo com o uso dos dados informados para
+                                fins de atendimento, contato e processamento
+                                desta solicitação.
+                            </label>
+                        </div>
+
+
+                        <!-- AVISO -->
+                        <div class="agendamento_aviso">
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            <p>
+                                O envio desta solicitação não representa a
+                                confirmação automática da consulta. Nossa equipe
+                                entrará em contato para confirmar profissional,
+                                data e horário.
+                            </p>
+                        </div>
+
+
+                        <button type="submit" class="agendamento_botao">
+                            Solicitar agendamento
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                        <div
+                            id="mensagemFormulario"
+                            class="form_mensagem"
+                            aria-live="polite"
+                        ></div>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             INFORMAÇÕES IMPORTANTES
+        ========================== -->
+        <section class="informacoes_agendamento">
+            <div class="agendamento_container">
+
+                <div class="agendamento_titulo">
+                    <span>Antes da consulta</span>
+                    <h2>Informações importantes</h2>
+                </div>
+
+                <div class="informacoes_grid">
+
+                    <article class="informacao_card">
+                        <i class="fa-regular fa-id-card"></i>
+
+                        <h3>Documentos</h3>
+
+                        <p>
+                            Tenha em mãos documento com foto, CPF e,
+                            quando aplicável, carteirinha do convênio.
+                        </p>
+                    </article>
+
+                    <article class="informacao_card">
+                        <i class="fa-regular fa-clock"></i>
+
+                        <h3>Horário</h3>
+
+                        <p>
+                            Recomendamos chegar com antecedência para
+                            cadastro e organização do atendimento.
+                        </p>
+                    </article>
+
+                    <article class="informacao_card">
+                        <i class="fa-solid fa-notes-medical"></i>
+
+                        <h3>Convênios</h3>
+
+                        <p>
+                            A cobertura pode variar conforme plano,
+                            especialidade e procedimento solicitado.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             WHATSAPP
+        ========================== -->
+        <section class="agendamento_whatsapp">
+            <div class="agendamento_whatsapp_conteudo">
+
+                <div>
+                    <span>Atendimento personalizado</span>
+
+                    <h2>Prefere falar com nossa equipe?</h2>
+
+                    <p>
+                        Nossa recepção também pode auxiliar você
+                        diretamente durante o agendamento.
+                    </p>
+                </div>
+
+                <a
+                    href="https://wa.me/5585999999999"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Falar com a recepção
+                </a>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -41,7 +518,7 @@
             <!-- Coluna 1 -->
             <div class="footer_coluna_1">
                 <h3>Clínica Salus</h3>
-                <img src="../icon/logo_sem_fundo.png" alt="Clínica Salus" class="footer_logo">
+                <a href="../index.html" aria-label="Voltar para a página inicial"><img src="../icon/logo_sem_fundo.png" alt="Clínica Salus" class="footer_logo"></a>
                 <p class="footer_texto">
                     A Clínica Salus oferece atendimento humanizado,
                     profissionais altamente qualificados e uma estrutura
@@ -52,12 +529,12 @@
             <div class="footer_coluna">
                 <h3>Links Rápidos</h3>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Equipe</a></li>
-                    <li><a href="#">Convênios</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../pages/quem_somos.html">Quem Somos</a></li>
+                    <li><a href="../pages/corpo_clinico.html#especialidades">Especialidades</a></li>
+                    <li><a href="../pages/corpo_clinico.html">Equipe</a></li>
+                    <li><a href="../#convenios">Convênios</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
                 </ul>
             </div>
             <!-- Coluna 3 -->
@@ -123,5 +600,6 @@
     </footer>
     
     <script src="../js/script.js"></script>
+    <script src="../js/agendamento.js"></script>
 </body>
 </html>
