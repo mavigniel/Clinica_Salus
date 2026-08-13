@@ -158,6 +158,7 @@
     border-radius:50px;
     font-weight:600;
     transition:.25s;
+    text-decoration: none;
 }
 
 .faq_cta_botao_principal:hover{

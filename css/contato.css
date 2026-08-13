@@ -561,12 +561,9 @@
     margin: 2rem auto 8rem;
     padding: 5rem 2rem;
     box-sizing: border-box;
-
     border-radius: 32px;
-
     text-align: center;
     color: #fff;
-
     background: linear-gradient(
         135deg,
         var(--contato-azul),
@@ -605,7 +602,7 @@
     color: var(--contato-azul-escuro);
     text-decoration: none;
     font-weight: 600;
-
+    
     transition: .3s;
 }
 

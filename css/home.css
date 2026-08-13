@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .secao_principal_texto{
@@ -62,43 +62,83 @@
     border-radius: 12px;
 }
 
-.secao_especialidades_final{
-    place-items: center
+/* SEÇÃO TÍTULOS */
+
+.secao_titulos{
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(255,255,255,.96) 0%,
+        rgba(255,255,255,.90) 45%,
+        rgba(255,255,255,.45) 100%
+    );
 }
 
-.secao_especialidades_final_grid{
+.secao_titulos_texto{
+    text-align:center;
+    padding:6em 0 3em 0;
+
+}
+
+.secao_titulos_texto > span{
+    display: block;
+    text-align: center;
+    margin-bottom: .8rem;
+    color: var(--azul);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+
+.secao_titulos_texto h1{
+    font-size:3rem;
+    color:var(--azul-escuro);
+    margin-bottom:15px;
+}
+
+.secao_titulos_texto p{
+    color:#666;
+    font-size:1.1rem;
+}
+
+.secao_titulos_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    gap: 2em;
-    width: 70%;
-    margin-top: 2em;
-    
+    place-items: center;
+    width: 100%;
+    height: 350px;
 }
 
-.secao_especialidades_final_div{
+.secao_titulos_div{
     background-color: transparent;
     border: none;
-    padding: 10px;
     font-size: 1em;
     text-align: center;
     overflow:hidden;
-
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 350px;
 }
 
-.secao_especialidades_final_img{
-    width:100%;
+.secao_titulos_img{
+    width:80%;
     height:auto;
     object-fit:cover;
     display:block;
 }
 
-.secao_especialidades_final_img:hover{
+.secao_titulos_img:hover{
     transform: scale(1.2,1.2);
 }
 
+/* SEÇÃO CONVÊNIOS */
 
 .secao_convenios{
     display:flex;
@@ -110,37 +150,40 @@
 }
 
 .secao_convenios_titulo{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    padding: 4em 0 0 0;
+    text-align:center;
+    padding:6em 0 3em 0;
+
 }
 
-.secao_convenios_titulo_img{
-    width:100px;
-    height:100px;
-    object-fit:contain;
-    margin:0 auto;
+.secao_convenios_titulo > span{
+    display: block;
+    text-align: center;
+    margin-bottom: .8rem;
+    color: var(--azul);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
 }
 
-.secao_convenios_titulo_texto{
-    font-family:var(--fonte-principal);
+.secao_convenios_titulo h1{
     font-size:3rem;
     color:var(--azul-escuro);
     margin-bottom:15px;
-    text-align:center;
+}
+
+.secao_convenios_titulo p{
+    color:#666;
+    font-size:1.1rem;
 }
 
 .secao_convenios_container{
     display:flex;
     flex-direction:row;
-    justify-content:center;
-    align-items: flex-start;
-    width:80%;
+    place-items: center;
+    width:90%;
     height: 100%;
-    margin-top:1em;
-    margin-bottom: 2em;
+    margin: 1em 0 2em 4em;
     gap: 3em;
 }
 
@@ -148,18 +191,10 @@
     display:flex;
     flex-direction:column;
     justify-content:left;
-    align-items:flex-start;
+    align-items:stretch;
     width:50%;
     height: 100%;
     background-color:transparent;
-}
-
-.secao_convenios_informacoes_titulo{
-    font-family:var(--fonte-secundaria);
-    font-size:1.5em;
-    color:var(--azul-escuro);
-    text-align:left;
-    margin-bottom:1em;
 }
 
 .secao_convenios_informacoes_texto{
@@ -167,9 +202,8 @@
     font-size:1.2em;
     color:var(--azul-escuro);
     text-align:left;
-    margin-bottom:1em;
     text-align: justify;
-    padding-right: 1em;
+    padding: 2em 0 1em 0;
 }
 
 .secao_convenios_informacoes_botao{
@@ -182,6 +216,9 @@
     font-size:1.2em;
     font-weight:700;
     cursor:pointer;
+    max-width: 250px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .secao_convenios_informacoes_botao:hover{
@@ -194,7 +231,7 @@
     grid-template-columns: auto auto auto;
     column-gap: 1em;
     row-gap: 1em;
-    justify-content: start;
+    justify-content: center;
     background-color: transparent;
     width: 50%;
     height: auto;
