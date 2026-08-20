@@ -81,3 +81,128 @@
 .cabecalho_menu_item_botao:active{
     color: var(--lavanda);
 }
+
+/* =========================================
+   RESPONSIVIDADE - TABLETS
+   até 1024px
+========================================= */
+
+@media (max-width: 1024px) {
+    
+    /* HEADER */
+    .cabecalho {
+        height: auto;
+        min-height: 4.5rem;
+        padding: .8rem 1.5rem;
+
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .cabecalho_logo {
+        flex-grow: 0;
+        justify-content: flex-start;
+    }
+
+    .cabecalho_logo_img {
+        max-width: 2.8rem;
+        padding: .5rem;
+    }
+
+    .cabecalho_logo_nome {
+        font-size: 1.25rem;
+    }
+
+    .cabecalho_menu {
+        flex-grow: 0;
+        gap: 1.4rem;
+    }
+
+    .cabecalho_menu_item_botao {
+        font-size: .95rem;
+    }
+}
+
+/* =========================================
+   RESPONSIVIDADE - CELULARES / TABLETS
+   até 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .cabecalho {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 1rem 1.2rem;
+    }
+
+    .cabecalho_logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cabecalho_logo_img {
+        max-width: 2.6rem;
+    }
+
+    .cabecalho_logo_nome {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho_menu {
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .8rem 1.3rem;
+
+        padding-top: .6rem;
+    }
+
+    .cabecalho_menu_item_botao {
+        font-size: .9rem;
+    }
+
+    .cabecalho_menu_item_botao:hover {
+        transform: none;
+    }
+}   
+
+/* =========================================
+   RESPONSIVIDADE - CELULARES PEQUENOS
+   até 480px
+========================================= */
+
+@media (max-width: 480px) {
+   
+    /* HEADER */
+    .cabecalho {
+        padding: .8rem 1rem;
+    }
+
+    .cabecalho_logo_img {
+        max-width: 2.3rem;
+    }
+
+    .cabecalho_logo_nome {
+        font-size: 1.05rem;
+    }
+
+    .cabecalho_menu {
+        flex-direction: column;
+        align-items: center;
+        gap: .65rem;
+
+        padding-top: .8rem;
+    }
+
+    .cabecalho_menu_item_botao {
+        width: 100%;
+        padding: .35rem 0;
+
+        text-align: center;
+        font-size: .9rem;
+    }
+}

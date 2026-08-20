@@ -243,3 +243,302 @@
     padding: 4em 0 1em 0;
 }
 
+/* =========================================
+   RESPONSIVIDADE CORPO CLÍNICO - TABLETS
+   até 1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    /* EQUIPE */
+    .secao_equipe {
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    .secao_equipe_titulo {
+        padding-top: 2.5rem;
+    }
+
+    .secao_equipe_titulo_texto {
+        font-size: 2.5rem;
+    }
+
+    .secao_equipe_titulo_paragrafro {
+        max-width: 700px;
+        padding: 0 1rem 1rem;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .secao_equipe_grid {
+        width: 100%;
+        max-height: none;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+
+        gap: 2rem;
+    }
+
+    .secao_equipe_grid_medico_foto {
+        height: 320px;
+    }
+
+
+    /* ESPECIALIDADES */
+    .secao_especialidades_titulo_texto {
+        height: auto;
+        padding: 4rem 1rem 1rem;
+    }
+
+    .secao_especialidades_texto {
+        padding: 0;
+        font-size: 2.5rem;
+    }
+
+    .secao_especialidades_titulo p {
+        max-width: 700px;
+        padding: 0 2rem;
+        line-height: 1.7;
+    }
+
+    .secao_especialidades_carrossel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .secao_especialidades_swiper {
+        width: 100%;
+    }
+
+    .swiper {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .swiper-wrapper {
+        height: 320px;
+    }
+
+    .swiper-slide {
+        height: 320px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE CORPO CLÍNICO
+   CELULARES / TABLETS
+   até 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* EQUIPE */
+    .secao_equipe {
+        padding: 0 1.5rem;
+    }
+
+    .secao_equipe_titulo {
+        padding-top: 3rem;
+    }
+
+    .secao_equipe_titulo_texto {
+        font-size: 2.2rem;
+    }
+
+    .secao_equipe_titulo_paragrafro {
+        padding: 0 0 1rem;
+        font-size: 1rem;
+    }
+
+    .secao_equipe_grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        width: 90%;
+        max-width: 520px;
+    }
+
+    .secao_equipe_grid_medico {
+        width: 100%;
+    }
+
+    .secao_equipe_grid_medico_foto {
+        height: 380px;
+    }
+
+    .secao_equipe_grid_medico_nome {
+        margin-top: 25px;
+        font-size: 1.4rem;
+    }
+
+    .secao_equipe_grid_medico_descricao {
+        margin: 15px 25px;
+    }
+
+    .secao_equipe_grid_medico_texto {
+        padding: 0 25px;
+        line-height: 1.7;
+    }
+
+    .secao_equipe_grid_medico:hover {
+        transform: none;
+    }
+
+
+    /* ESPECIALIDADES */
+    .secao_especialidades_titulo {
+        padding-top: 2rem;
+        box-sizing: border-box;
+    }
+
+    .secao_especialidades_titulo_texto {
+        padding: 3rem 1.5rem 1rem;
+    }
+
+    .secao_especialidades_texto {
+        font-size: 2.2rem;
+    }
+
+    .secao_especialidades_titulo p {
+        padding: 0 1.5rem;
+        font-size: 1rem;
+    }
+
+    .secao_especialidades_carrossel {
+        margin-top: 2rem;
+    }
+
+    .swiper {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .swiper-wrapper {
+        height: 300px;
+    }
+
+    .swiper-slide {
+        height: 300px;
+    }
+
+    .swiper-slide img:hover {
+        transform: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(.8);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE CORPO CLÍNICO
+   CELULARES PEQUENOS
+   até 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* EQUIPE */
+    .secao_equipe {
+        padding: 0 1rem;
+    }
+
+    .secao_equipe_titulo {
+        padding-top: 2.5rem;
+    }
+
+    .secao_equipe_titulo_texto {
+        font-size: 1.8rem;
+    }
+
+    .secao_equipe_titulo_paragrafro {
+        font-size: .95rem;
+        line-height: 1.6;
+    }
+
+    .secao_equipe_grid {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .secao_equipe_grid_medico {
+        border-radius: 18px;
+        padding-bottom: 30px;
+    }
+
+    .secao_equipe_grid_medico_foto {
+        height: 300px;
+    }
+
+    .secao_equipe_grid_medico_nome {
+        margin-top: 22px;
+        font-size: 1.25rem;
+    }
+
+    .secao_equipe_grid_medico_crm {
+        padding: 7px 15px;
+        font-size: .8rem;
+    }
+
+    .secao_equipe_grid_medico_descricao {
+        margin: 12px 18px;
+        font-size: .9rem;
+    }
+
+    .secao_equipe_grid_medico_texto {
+        padding: 0 18px;
+        margin-bottom: 25px;
+
+        font-size: .9rem;
+        text-align: justify;
+    }
+
+    .secao_equipe_grid_medico > a {
+        padding: 12px 25px;
+        font-size: .9rem;
+    }
+
+
+    /* ESPECIALIDADES */
+    .secao_especialidades_titulo_texto {
+        padding: 2.5rem 1rem 1rem;
+    }
+
+    .secao_especialidades_titulo_texto > span {
+        font-size: .72rem;
+        letter-spacing: .12rem;
+    }
+
+    .secao_especialidades_texto {
+        font-size: 1.8rem;
+    }
+
+    .secao_especialidades_titulo p {
+        padding: 0 1.2rem;
+        font-size: .95rem;
+        line-height: 1.6;
+    }
+
+    .swiper {
+        width: 92%;
+    }
+
+    .swiper-wrapper {
+        height: 270px;
+    }
+
+    .swiper-slide {
+        height: 270px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(.7);
+    }
+}

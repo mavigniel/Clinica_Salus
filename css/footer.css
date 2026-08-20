@@ -127,3 +127,184 @@
     color:#c7c7c7;
     line-height:1.8;
 }
+
+/* =========================================
+   RESPONSIVIDADE - TABLETS
+   até 1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    /* FOOTER */
+    .footer {
+        padding: 60px 0 20px;
+    }
+
+    .footer_container {
+        width: 92%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px 35px;
+    }
+
+    .footer_coluna_1 {
+        align-items: flex-start;
+    }
+
+    .footer_coluna_1 > a {
+        align-self: center;
+    }
+
+    .footer_logo {
+        display: block;
+        width: 190px;
+    }
+
+    .footer_texto {
+        text-align: justify;
+    }
+
+    .footer_redes {
+        margin-top: 50px;
+        gap: 22px;
+    }
+
+    .footer_redes a {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE - CELULARES / TABLETS
+   até 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* FOOTER */
+    .footer {
+        margin-top: 80px;
+        padding: 50px 0 20px;
+    }
+
+    .footer_container {
+        width: 88%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer_coluna_1,
+    .footer_coluna {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer_coluna_1 {
+        display: flex;
+    }
+
+    .footer_coluna_1 > a {
+        align-self: center;
+    }
+
+    .footer_logo {
+        display: block;
+        width: 170px;
+    }
+
+    .footer_coluna_1 h3,
+    .footer_coluna h3 {
+        margin-bottom: 18px;
+    }
+
+    .footer_texto {
+        max-width: 100%;
+        text-align: justify;
+        line-height: 1.7;
+    }
+
+    .footer_coluna li {
+        margin-bottom: 11px;
+    }
+
+    .footer_redes {
+        margin-top: 45px;
+        margin-bottom: 35px;
+
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .footer_redes a {
+        width: 48px;
+        height: 48px;
+    }
+
+    .footer_copy {
+        width: 88%;
+        margin: 25px auto 0;
+
+        font-size: .85rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE - CELULARES PEQUENOS
+   até 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* FOOTER */
+    .footer {
+        padding-top: 40px;
+    }
+
+    .footer_container {
+        width: 90%;
+        gap: 32px;
+    }
+
+    .footer_logo {
+        width: 145px;
+        align-items: center;
+    }
+
+    .footer_coluna_1 > a {
+        align-self: center;
+    }
+
+    .footer_logo {
+        width: 145px;
+        display: block;
+    }
+
+    .footer_coluna_1 h3,
+    .footer_coluna h3 {
+        font-size: 1.05rem;
+    }
+
+    .footer_texto,
+    .footer_coluna li,
+    .footer_coluna a {
+        font-size: .9rem;
+        text-align: justify;
+    }
+
+    .footer_redes {
+        gap: 14px;
+    }
+
+    .footer_redes a {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .footer_copy {
+        font-size: .78rem;
+    }
+}

@@ -302,3 +302,391 @@
     transform:translateY(-4px);
     background:#F3F5F8;
 }
+
+/* =========================================
+   RESPONSIVIDADE HOME - TABLETS
+   até 1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    /* HERO */
+    .secao_principal {
+        height: auto;
+        min-height: 80vh;
+        padding: 4rem 2rem;
+        gap: 2rem;
+    }
+
+    .secao_principal_texto {
+        max-width: 45%;
+        padding-left: 0;
+    }
+
+    .secao_principal_texto_titulo {
+        font-size: 2.2rem;
+    }
+
+    .secao_principal_texto_descricao {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .secao_principal_img {
+        max-width: 55%;
+    }
+
+
+    /* CONQUISTAS */
+    .secao_titulos {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 4rem;
+    }
+
+    .secao_titulos_texto {
+        padding: 5rem 1.5rem 2rem;
+    }
+
+    .secao_titulos_texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .secao_titulos_grid {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .secao_titulos_div {
+        width: 100%;
+        height: 280px;
+    }
+
+    .secao_titulos_img {
+        width: 70%;
+        max-width: 220px;
+    }
+
+
+    /* CONVÊNIOS */
+    .secao_convenios_titulo {
+        padding: 5rem 1.5rem 2rem;
+    }
+
+    .secao_convenios_titulo h1 {
+        font-size: 2.5rem;
+    }
+
+    .secao_convenios_container {
+        width: 90%;
+        margin: 1rem auto 2rem;
+        gap: 2rem;
+    }
+
+    .secao_convenios_informacoes {
+        width: 45%;
+    }
+
+    .secao_convenios_informacoes_texto {
+        font-size: 1.05rem;
+    }
+
+    .secao_convenios_grid {
+        width: 55%;
+    }
+
+    .secao_convenios_grid_item_img {
+        max-width: 100px;
+    }
+
+
+    /* CTA */
+    .cta_final {
+        width: 90%;
+        box-sizing: border-box;
+        margin-top: 90px;
+        padding: 65px 35px;
+    }
+
+    .cta_final_titulo {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE HOME - CELULARES / TABLETS
+   até 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .secao_principal {
+        min-height: auto;
+
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 4rem 1.5rem 2rem;
+        text-align: center;
+    }
+
+    .secao_principal_texto {
+        max-width: 100%;
+        padding-left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao_principal_texto_titulo {
+        font-size: 2.2rem;
+    }
+
+    .secao_principal_texto_descricao {
+        max-width: 550px;
+        font-size: 1rem;
+    }
+
+    .secao_principal_texto > a {
+        padding: .75rem 1.4rem;
+    }
+
+    .secao_principal_img {
+        max-width: 85%;
+        margin-top: 2rem;
+    }
+
+    .secao_principal_img_medica {
+        width: 100%;
+    }
+
+
+    /* CONQUISTAS */
+    .secao_titulos {
+        min-height: auto;
+        padding: 3rem 0 5rem;
+    }
+
+    .secao_titulos_texto {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    .secao_titulos_texto h1 {
+        font-size: 2.2rem;
+    }
+
+    .secao_titulos_texto p {
+        font-size: 1rem;
+    }
+
+    .secao_titulos_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .secao_titulos_div {
+        height: 230px;
+    }
+
+    .secao_titulos_img {
+        width: 75%;
+        max-width: 180px;
+    }
+
+    .secao_titulos_img:hover {
+        transform: none;
+    }
+
+
+    /* CONVÊNIOS */
+    .secao_convenios_titulo {
+        padding: 4rem 1.5rem 2rem;
+    }
+
+    .secao_convenios_titulo h1 {
+        font-size: 2.2rem;
+    }
+
+    .secao_convenios_titulo p {
+        font-size: 1rem;
+    }
+
+    .secao_convenios_container {
+        width: 88%;
+
+        flex-direction: column;
+        gap: 3rem;
+
+        margin: 1rem auto 2rem;
+    }
+
+    .secao_convenios_informacoes {
+        width: 100%;
+        align-items: center;
+    }
+
+    .secao_convenios_informacoes_texto {
+        padding: 1rem 0;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    .secao_convenios_informacoes_botao {
+        font-size: 1rem;
+        padding: .7rem 1.3rem;
+    }
+
+    .secao_convenios_grid {
+        width: 100%;
+
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .secao_convenios_grid_item {
+        width: 100%;
+        max-width: none;
+    }
+
+    .secao_convenios_grid_item_img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+
+
+    /* CTA */
+    .cta_final {
+        width: 88%;
+        margin-top: 70px;
+        padding: 55px 25px;
+        border-radius: 30px;
+    }
+
+    .cta_final_titulo {
+        font-size: 2rem;
+    }
+
+    .cta_final_texto {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .cta_final_botao {
+        margin-top: 30px;
+        padding: 15px 32px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE HOME - CELULARES PEQUENOS
+   até 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* HERO */
+    .secao_principal {
+        padding: 3rem 1.2rem 2rem;
+    }
+
+    .secao_principal_texto_titulo {
+        font-size: 1.8rem;
+    }
+
+    .secao_principal_texto_descricao {
+        font-size: .95rem;
+    }
+
+    .secao_principal_img {
+        max-width: 100%;
+    }
+
+
+    /* CONQUISTAS */
+    .secao_titulos {
+        padding-bottom: 3rem;
+    }
+
+    .secao_titulos_texto {
+        padding: 2.5rem 1.2rem 2rem;
+    }
+
+    .secao_titulos_texto h1 {
+        font-size: 1.8rem;
+    }
+
+    .secao_titulos_grid {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .secao_titulos_div {
+        height: 210px;
+    }
+
+    .secao_titulos_img {
+        width: 65%;
+        max-width: 180px;
+    }
+
+
+    /* CONVÊNIOS */
+    .secao_convenios_titulo {
+        padding: 3rem 1.2rem 2rem;
+    }
+
+    .secao_convenios_titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .secao_convenios_container {
+        width: 90%;
+    }
+
+    .secao_convenios_informacoes_texto {
+        font-size: .95rem;
+    }
+
+    .secao_convenios_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .secao_convenios_grid_item_img {
+        max-width: 90px;
+    }
+
+
+    /* CTA */
+    .cta_final {
+        width: 90%;
+        margin-top: 50px;
+        padding: 45px 20px;
+        border-radius: 24px;
+    }
+
+    .cta_final_titulo {
+        font-size: 1.7rem;
+    }
+
+    .cta_final_texto {
+        font-size: .95rem;
+    }
+
+    .cta_final_botao {
+        margin-top: 25px;
+        padding: 14px 26px;
+        font-size: .9rem;
+    }
+}
