@@ -4,31 +4,6 @@ Este documento apresenta o planejamento das próximas etapas de desenvolvimento 
 
 ---
 
-# Versão 0.4.0
-
-## Páginas
-
-- [ ] Finalizar página Contato
-- [ ] Finalizar página Corpo Clínico
-- [ ] Desenvolver página Exames
-- [ ] Desenvolver página Agendamento
-
-## Componentes
-
-- [ ] Formulário funcional de contato
-- [ ] Integração com Google Maps
-- [ ] Botão flutuante do WhatsApp
-- [ ] Breadcrumb nas páginas internas
-
-## Interface
-
-- [ ] Ajustes de responsividade
-- [ ] Melhorias de acessibilidade
-- [ ] Otimização das animações
-- [ ] Padronização dos backgrounds
-
----
-
 # Versão 0.5.0
 
 ## Funcionalidades
@@ -105,11 +80,11 @@ Este documento apresenta o planejamento das próximas etapas de desenvolvimento 
 | Equipe | ✅ |
 | Convênios | ✅ |
 | Footer | ✅ |
-| Contato | 🚧 |
-| Corpo Clínico | 🚧 |
-| Perguntas Frequentes | 🚧 |
-| Exames | ⏳ |
-| Agendamento | ⏳ |
-| Responsividade | 🚧 |
+| Contato | ✅ |
+| Corpo Clínico | ✅ |
+| Perguntas Frequentes | ✅ |
+| Agendamento | ✅ |
+| Responsividade | ✅ |
 | SEO | ⏳ |
 | Deploy | ⏳ |
+| Exames | ⏳ |
